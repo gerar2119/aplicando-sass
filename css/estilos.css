@@ -1,0 +1,93 @@
+/*import*/
+.bg-navpropio {
+  background-image: linear-gradient(to left, rgb(252, 250, 250), rgb(189, 189, 184));
+}
+
+/*anidamiento*/
+.bg-central {
+  background-image: linear-gradient(to left, white, red, white);
+}
+.bg-central h1 {
+  text-shadow: 5px 0 black, 0 2px black, 3px 0 black, 0 -1px black;
+}
+
+/*animaciones*/
+h1 {
+  animation-duration: 3s;
+  animation-name: titulo;
+}
+
+@keyframes titulo {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+p {
+  animation-duration: 3s;
+  animation-name: texto;
+}
+
+@keyframes texto {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+/*MEDIA QUERIES*/
+/*DESKTOP*/
+@media (max-width: 1200px) {
+  .bg-navpropio {
+    background-image: linear-gradient(to left, rgb(252, 250, 250), rgb(233, 98, 7));
+  }
+
+  .bg-central {
+    background-image: url(https://th.bing.com/th/id/OIP.k7EQfGZYyTZcfL_C2EpjPgHaEK?pid=ImgDet&rs=1);
+  }
+
+  h1 {
+    text-shadow: 5px 0 black, 0 2px black, 3px 0 black, 0 -1px black;
+  }
+}
+.bg-texto {
+  color: rgba(8, 8, 8, 0.863);
+}
+
+/*TABLET*/
+@media (max-width: 992px) {
+  .bg-navpropio {
+    background-image: linear-gradient(to left, rgb(236, 70, 4), rgb(189, 189, 184));
+  }
+
+  h1 {
+    text-shadow: 5px 0 black, 0 2px black, 3px 0 black, 0 -1px black;
+  }
+
+  .bg-texto {
+    color: rgba(253, 252, 252, 0.863);
+  }
+}
+/*MOBILE*/
+@media (max-width: 576px) {
+  .bg-navpropio {
+    background: linear-gradient(to right, red, orange, yellow, green, blue);
+  }
+
+  .bg-central {
+    background-image: url(https://th.bing.com/th/id/OIP.KCHotfPiHBi1K3Gg9eLW6AAAAA?pid=ImgDet&rs=1);
+  }
+
+  h1 {
+    text-shadow: 2px 0 black, 0 2px black, 3px 0 black, 0 -1px black;
+  }
+
+  .bg-texto {
+    color: orangered;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
